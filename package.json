@@ -1,7 +1,7 @@
 {
   "name": "taplist-backend",
   "version": "2.0.0",
-  "description": "Provides JSON data and Untappd integration for taplists.",
+  "description": "Provides common backend functionality for taplists.com apps.",
   "author": "Patrick Crager",
   "homepage": "https://github.com/patch-e/taplist-backend",
   "bugs": "https://github.com/patch-e/taplist-backend/issues",
