@@ -1,4 +1,4 @@
-taplist-backend
+Taplist - Backend
 =========
 
 A Node.js app providing common backend functionality for taplists.com apps.
