@@ -20,6 +20,7 @@ module.exports = {
 			.replace('Fermentery Form & Blendery', 'Fermentery Form')
 			.replace('Foreign Objects Beer Co.', 'Foreign Objects')
 			.replace('Sir Charles Hard Cider', 'Original 13 Ciderworks')
+			.replace('BIG HILL CIDER', 'BIG HILL CIDERWORKS')
 			;
 
 		beer.name = beer.name
