@@ -27,11 +27,12 @@ module.exports = {
 			.replace(/ *\[[^)]*\] */g, '')
 			// remove special hyphen'd text sometimes added to the end as a special notice, ex. BEERNAME -LAST KEG!!
 			// .replace(/ (-).+$/g, '')
+			// .replace(/(- ).+$/g, '')
 			// additional name fixes on a case-by-case basis
 			.replace('8OZ', '')
-			.replace('Weizen', '"Weizen"')
-			.replace('Firestone Lager', '"Firestone Lager"')
-			.replace('Tripel', 'Tripel (2018)')
+			.replace('AMARGO- STRAWBERRY', 'AMARGA')
+			.replace(' *CAN', '')
+			.replace(' *12OZ BOTTLE', '')
 			;
 	}
 
