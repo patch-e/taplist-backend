@@ -53,7 +53,7 @@ var lititzLoginOptions = {
 			client_id: process.env.lititzUntappdClientID,
 			client_secret: process.env.lititzUntappdClientSecret,
 			response_type: 'code',
-			redirect_url: 'http://taplist.lititzcraftbeerfest.com/nodejs/beer/login',
+			redirect_url: 'https://taplist.lititzcraftbeerfest.com/nodejs/beer/login',
 			code: null
 		}
     },
@@ -133,7 +133,7 @@ function untappdSearch(req, res, beer, token) {
 	}
 
 	// fetch from untappd, store in db if not authenticated, and write out the response
-	requestOptions.qs.q = encodeURIComponent(beer.brewery + ' ' + beer.name);
+	requestOptions.qs.q = encodeURIComponent(beer.name) + ' ' + beer.brewery;
 
 	// fire off request to untappd search api
 	request(requestOptions, function (error, response, json) {
