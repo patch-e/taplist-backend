@@ -133,7 +133,7 @@ function untappdSearch(req, res, beer, token) {
 	}
 
 	// fetch from untappd, store in db if not authenticated, and write out the response
-	requestOptions.qs.q = encodeURIComponent(beer.name) + ' ' + beer.brewery;
+	requestOptions.qs.q = encodeURIComponent(beer.name + ' ' + beer.brewery);
 
 	// fire off request to untappd search api
 	request(requestOptions, function (error, response, json) {
