@@ -35,6 +35,10 @@ module.exports = {
 			.replace(' *CAN', '')
 			.replace(' *12OZ BOTTLE', '')
 			;
+		
+		if (beer.name.indexOf("I Love Being A Turtle") > -1) {
+			beer.brewery = 'Fourscore'
+		}
 	}
 
 };
