@@ -21,7 +21,7 @@ var express = require('express'),
 
 // request options
 var pizzaboyListOptions = {
-		url: 'http://alsofhampden.com/beer.php'
+		url: 'https://pizzaboybrewing.com/full-bar/beer-list'
 	},
 	pizzaboyLoginOptions = {
 		url: 'https://untappd.com/oauth/authorize',
